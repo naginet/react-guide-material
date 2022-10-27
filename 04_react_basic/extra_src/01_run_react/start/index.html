@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <script src="/libs/react.development.js"></script>
-        <script src="/libs/react-dom.development.js"></script>
-        <script src="/libs/babel-standalone.js"></script>
-    </head>
+<head>
+    <script src="/libs/react.development.js"></script>
+    <script src="/libs/react-dom.development.js"></script>
+    <script src="/libs/babel-standalone.js"></script>
+    <title>document</title>
 
-    <body>
-        <div id="app"></div>
-        <script type="text/babel">
-            const appEl = document.querySelector('#app');
-            const root = ReactDOM.createRoot(appEl);
-            root.render(<h1>こんにちは</h1>);
-        </script>
+</head>
 
-    </body>
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+        const appEl = document.querySelector('#app');
+        const root = ReactDOM.createRoot(appEl);
+        // function Examaple() {
+        //     return <h1>Hello Components</h1>;
+        // }
+        const Examaple = () => {
+            return (
+                <div>
+                    <h1>Hello Components</h1>
+                </div>
+            )
+        };
+
+        root.render(<Examaple />);
+    </script>
+
+</body>
 
 </html>
