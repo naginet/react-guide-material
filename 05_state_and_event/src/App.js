@@ -1,5 +1,5 @@
 import "./App.css";
-import { Suspense, useState, useEffect, lazy, StrictMode } from "react";
+import { Suspense, useState, useEffect, lazy } from "react";
 import BaseErrorBoundary from "./BaseErrorBoundary";
 
 const STORAGE_KEY = "rcg-current-lec-index";
@@ -52,7 +52,8 @@ const App = ({ lectures }) => {
         <h2>完成コード（end）</h2>
         <DynamicLoader component={`./${lecId}/end/Example`} />
       </div>
-    </div>  );
+    </div>
+  );
 };
 
 export default App;
